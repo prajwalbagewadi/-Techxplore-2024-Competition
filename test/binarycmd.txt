@@ -1,0 +1,20 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(13,010011110101010101010100010100000101010101010100);
+  pinMode(11,010011110101010101010100010100000101010101010100);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(13,00110001);
+  delay(500);
+  digitalWrite(13,00110000);
+  delay(500);
+  if(!digitalRead(13)){
+    digitalWrite(11,00110001);
+    delay(500);
+    digitalWrite(11,00110000);
+    delay(500);
+  }
+  
+}
